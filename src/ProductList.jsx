@@ -4,7 +4,7 @@ import CartItem from "./CartItem";
 import { useDispatch } from "react-redux";
 import { addItem } from "./CartSlice";
 import { useSelector } from "react-redux";
-
+// import {calculateTotalAmount} from "./CartItem"
 function ProductList({ onHomeClick }) {
   const cart = useSelector((state) => state.cart.items);
   const [total, setTotal] = useState(0);
